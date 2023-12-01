@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  padding: 1rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.8px;
+}
+.heading{
+  padding: 1.4rem;
+}
+input{
+  outline: none;
+  width: 40%;
+  border:  2px solid blue;
+  padding: 4px 5px;
+  font-size: 1rem;
+  border-radius: 4px 0px 0px 4px;
+}
+.add-btn,.editable-btn{
+  outline: none;
+  padding: 4px ;
+  border-radius: 0px 4px 4px 0px;
+  border:  2px solid blue;
+  font-size: 1rem;
+  cursor: pointer;
+}
+hr{
+  margin-top: 2rem;
+}
+ul{
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+li{
+  width: 80%;
+  list-style-type: decimal-leading-zero;
+  padding: 0.3rem 5rem 0.4rem 1rem;
+  margin: 0.4rem 2rem;
+  box-shadow: 0px 0px 2px black;
+  position: relative;
+  border-radius: 6px;
+  word-wrap: break-word;
+}
+.no-item-text{
+  font-size: 1.2rem;
+  margin: 1rem;
+  color: red;
+}
+li .del-btn{
+  position: absolute;
+  right: 0.4rem;
+  top: 0.4rem;
+  color: red;
+  background:transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+li .btn1{
+  position: absolute;
+  color: black;
+  background:transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  right: 2rem;
+  top: 0.4rem;
+  cursor: pointer;
+}
+
+
+
+@media screen and (min-width:300px) and (max-width:720px){
+  input{
+    width: 80%;
+    padding: 4px 5px;
+    font-size: 1rem;
+  }
+  ul{
+    width: 88%;
+  }
+  li{
+    width: 100%;
+  }
+}
